@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.ButtonBarLayout;
 import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -48,5 +49,16 @@ public class MainActivity extends AppCompatActivity {
     public void drink(View view) {
         Intent intent = new Intent(MainActivity.this, DrinkActivity.class);
         startActivity(intent);
+    }
+
+
+    /*
+    This method is called when the clear botton is clicked
+    * */
+
+    public void clearOrder(View view){
+        FoodInfo.PRICE=0;
+        FoodInfo.foodList.clear();
+        Toast.makeText(this, "You have removed all food", Toast.LENGTH_SHORT).show();
     }
 }
