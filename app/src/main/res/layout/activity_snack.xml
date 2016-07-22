@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF3E0"
+    tools:context="com.example.android.takeout.SnackActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+>
+
+        <LinearLayout
+            android:id="@+id/snack_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="snack"
+                android:textAllCaps="true"
+                android:textColor="#E65100"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="170sp"
+                android:layout_height="110sp"
+                android:layout_margin="10dp"
+                android:src="@drawable/springroll" />
+
+            <CheckBox
+                android:id="@+id/spring_roll_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:paddingLeft="16dp"
+                android:text="Spring Roll       $8"
+                android:textColor="#E65100"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="170sp"
+                android:layout_height="110sp"
+                android:layout_margin="10dp"
+                android:background="#FFFFFF"
+                android:src="@drawable/dumpling" />
+
+            <CheckBox
+                android:id="@+id/dumpling_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:paddingLeft="16dp"
+                android:text="dumpling      $9"
+                android:textColor="#E65100"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="170sp"
+                android:layout_height="110sp"
+                android:layout_margin="10dp"
+                android:src="@drawable/steamedstuffedbun" />
+
+            <CheckBox
+                android:id="@+id/steamed_stuffed_bun_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:paddingLeft="10dp"
+                android:text="Steamed Stuffed Bun       $15"
+                android:textColor="#E65100"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/snack_layout"
+            android:layout_marginTop="16dp"
+            android:background="#FFAB40"
+            android:onClick="submitOrder"
+            android:text="Order" />
+    </RelativeLayout>
+</ScrollView>

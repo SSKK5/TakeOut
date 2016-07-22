@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF3E0"
+    tools:context="com.example.android.takeout.DishesActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/dishes_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="dishes"
+                android:textAllCaps="true"
+                android:textColor="#E65100"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="180sp"
+                android:layout_height="110sp"
+                android:layout_margin="10dp"
+                android:src="@drawable/boiledfishinchilioil" />
+
+            <CheckBox
+                android:id="@+id/boiled_fish_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="Boiled Fish In Chili Oid      $13"
+                android:textColor="#E65100"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="180sp"
+                android:layout_height="110sp"
+                android:layout_margin="10dp"
+                android:src="@drawable/sweetandsourspareribs" />
+
+            <CheckBox
+                android:id="@+id/dumpling_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="Sweet And Sour Spare Ribs     $14"
+                android:textColor="#E65100"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/dishes_layout"
+            android:layout_marginTop="16dp"
+            android:background="#FFAB40"
+            android:onClick="submitOrder"
+            android:text="Order" />
+    </RelativeLayout>
+</ScrollView>

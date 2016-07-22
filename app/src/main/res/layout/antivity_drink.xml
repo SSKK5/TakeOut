@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF3E0"
+    tools:context="com.example.android.takeout.DrinkActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+>
+
+        <LinearLayout
+            android:id="@+id/drink_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="drink"
+                android:textAllCaps="true"
+                android:textColor="#E65100"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="170sp"
+                android:layout_height="110sp"
+                android:layout_margin="10dp"
+                android:background="#FFFFFF"
+                android:src="@drawable/wangzaimilk" />
+
+            <CheckBox
+                android:id="@+id/wangzi_milk_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:paddingLeft="16dp"
+                android:text="Wangzai Milk      $5"
+                android:textColor="#E65100"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="170sp"
+                android:layout_height="110sp"
+                android:layout_margin="10dp"
+                android:background="#FFFFFF"
+                android:src="@drawable/mineralwater" />
+
+            <CheckBox
+                android:id="@+id/mineral_water_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:paddingLeft="16dp"
+                android:text="Mineral Water     $3"
+                android:textColor="#E65100"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="170sp"
+                android:layout_height="110sp"
+                android:layout_margin="10dp"
+                android:background="#FFFFFF"
+                android:src="@drawable/soup" />
+
+            <CheckBox
+                android:id="@+id/soup_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:paddingLeft="10dp"
+                android:text="Soup      $6"
+                android:textColor="#E65100"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/drink_layout"
+            android:layout_marginTop="16dp"
+            android:layout_margin="8dp"
+            android:background="#FFAB40"
+            android:onClick="submitOrder"
+            android:text="Order" />
+    </RelativeLayout>
+</ScrollView>

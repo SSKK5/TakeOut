@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".StapleActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="#FFF3E0">
+
+        <LinearLayout
+            android:id="@+id/staple_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Staple food"
+                android:textAllCaps="true"
+                android:textColor="#E65100"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="170sp"
+                android:layout_height="110sp"
+                android:layout_margin="10dp"
+                android:src="@drawable/riceconge" />
+
+            <CheckBox
+                android:id="@+id/rice_Congee_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:paddingLeft="24dp"
+                android:text="Rice Congee        $8"
+                android:textColor="#E65100"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="170sp"
+                android:layout_height="110sp"
+                android:layout_margin="10dp"
+                android:src="@drawable/beefnoodles" />
+
+            <CheckBox
+                android:id="@+id/beef_Noodle_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:paddingLeft="24dp"
+                android:text="Beef Noodle       $15"
+                android:textColor="#E65100"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="170sp"
+                android:layout_height="110sp"
+                android:layout_margin="10dp"
+                android:src="@drawable/tofurice" />
+
+            <CheckBox
+                android:id="@+id/tofu_rice_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:paddingLeft="24dp"
+                android:text="Tofu Rice     $12"
+                android:textColor="#E65100"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/staple_layout"
+            android:layout_marginTop="16dp"
+            android:layout_margin="8dp"
+            android:background="#FFAB40"
+            android:onClick="submitOrder"
+            android:text="Order" />
+    </RelativeLayout>
+</ScrollView>
